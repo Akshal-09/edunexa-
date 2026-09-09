@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduNexa AI Chat</title>
+
+<link rel="stylesheet" href="css/style.css">
+<script src="js/data.js"></script>
+<script src="js/chatbot.js"></script>
+<script src="js/script.js"></script>
+
+</head>
+<body>
+
+<div class="chat-container">
+
+    <div class="chat-header">
+        <h2>🤖 EduNexa AI Assistant</h2>
+    </div>
+
+    <div id="chatbox" class="chatbox">
+
+        <div class="bot-message">
+            Hello 👋 <br>
+            Ask me about DBMS, OOPS, Java, Python,
+            HTML, CSS, JavaScript, Interview, Exam Tips.
+        </div>
+
+    </div>
+
+    <div class="input-area">
+
+        <input
+        type="text"
+        id="question"
+        placeholder="Ask EduNexa AI...">
+<button class="new-chat" onclick="newChat()">
+    <i class="fa-solid fa-plus"></i>
+    Send
+</button>
+
+<script>
+function newChat(){
+    localStorage.removeItem("edunexaChat");
+    window.location.href = "askai.html";
+}
+</script>
+
+    </div>
+
+</div>
+
+</body>
+</html>
